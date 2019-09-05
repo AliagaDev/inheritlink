@@ -1,4 +1,4 @@
-## About InheritLink:
+## About inheritlink:
 Plugin for jQuery to inherit link action.
 
 ## Usage notes:
@@ -8,11 +8,14 @@ Plugin for jQuery to inherit link action.
  * Auto external will add new window attribute automatically.
 
 ## Usage example:
-if ($.fn.InheritClick) {
-  $('article.teaser').InheritClick('a', '', false, true);
+if ($.fn.inheritlink) {
+  $('article.teaser').inheritlink('a', '', false, true);
 }
 
 ## Changelog:
 
 ##### Version 1.0 - 2018-09-28
 * First release
+
+##### Version 2.0 - 2019-09-05
+* Renamed plugin to prevent uppercase usage in name.
