@@ -12,7 +12,7 @@
    * @param boolean autoExternal
    *   Auto detect external links and open in new window.
    */
-  $.fn.InheritLink = function(linkSelector, preventSelector, hideElement, autoExternal) {
+  $.fn.inheritlink = function(linkSelector, preventSelector, hideElement, autoExternal) {
     // Default prevent.
     if (preventSelector === undefined) {
       preventSelector = '';
