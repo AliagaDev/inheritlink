@@ -49,11 +49,19 @@
       if (hideElement) {
         $(first).hide();
       }
-      $(link_element).click(function (e) {
-        // Prevent loop and preserve any other click action (not first).
+      $(link_element).on("mouseup click",function(e) {
         if (!$(e.target).is(first) && !$(e.target).is(linkSelector)) {
-          $(first)[0].click();
+          // Left: 1, middle: 2, right 3.
+          switch (e.which) {
+            case 1:
+              $(first)[0].click();
+              break;
+            case 2:
+              $(first).clone().attr('target', '_blank')[0].click();
+              break;
+          }
         }
+        return true;
       });
     }
   };
