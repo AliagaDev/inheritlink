@@ -49,7 +49,7 @@
       if (hideElement) {
         $(first).hide();
       }
-      $(link_element).on("mouseup click",function(e) {
+      $(link_element).on("click",function(e) {
         if (!$(e.target).is(first) && !$(e.target).is(linkSelector)) {
           // Left: 1, middle: 2, right 3.
           switch (e.which) {
